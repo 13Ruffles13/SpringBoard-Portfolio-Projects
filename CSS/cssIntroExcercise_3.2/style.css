@@ -1,0 +1,106 @@
+/* Part 1 - Conceptual 
+
+1. What is a CSS selector? Please give an example.
+
+A: A CSS selector is what we are trying to style. For example If I declare a tag called <p>. If I want
+style this tag. I call it using CSS selector.
+
+p <- Selector {
+
+}
+
+2. What is a CSS Declaration? Please give an example.
+
+A: CSS declaration is the definition or functionality of the selector that we called. Whatever is
+declared in curly braces will be executed to my HTML page.
+
+p {
+    ....Declaration goes here 
+}
+
+3. What is a CSS Property? Please give an example.
+
+A: CSS Properties is what is declared inside the curly braces. These properties are endless from color,
+text-align, text-transformation, and much more that can bring your website to life.
+
+p {
+    text-align: <- By declaring this property we want to align text in my HTML with selector <p> tag
+}
+
+4. What is a CSS Value? Please give an example.
+
+A: CSS value is the actual effect or end result that we want to have in my HTML. Depending upon the
+property declared in the curly braces. For example text-align.
+
+p {
+    text-align: center; <- The value center will take any <p> tags in my HTML and center the text.
+}
+
+5. What are the three ways to include CSS?
+
+A: The first way, is in my HTML. You can do this by adding the <style> element in my <head> tag if you
+know only a few certain tags/elements will have the same property to save time. The second method
+is by using a external style-sheet which is where the comments are being written now. This file
+can be linked by using the <link> element declared in my <head> tag which is more common to do.
+The final way is by inline, which should be avoided due to being impractical in the industry. Since
+if a certain property needs to be changed and lets say its a <p> tag now you have to fix them one by
+one which will take more time at the end.
+
+6. What is the difference between rgb and rgba?
+
+A: RGB color can be represented as red, green, and blue light sources. For example to use in css it
+is declared as rgb(color, color, color) from the position of color it will output a certain color to
+my HTML. As for a RGBA the difference is it is a extension of RGB for the fact of the ending letter 'A'
+is an Alpha channel or known as 'opacity' value can be of 0 to 1. In CSS its declared the same just 
+adding another variable. RGBA(color, color, color, opacity).
+
+7. What is an em?
+
+A: Em allows setting font size relative to the parent. The way this is used for example if the user
+has a big font on the desktop or a small font on his mobile device by using em the sizes will be in
+proportion.
+
+8. What are the differences between em and rem?
+
+A: The main differences between em and rem is that 'em' is relative to the parent element. While rem
+is relative to the root element. Meaning with rem you don't have to worry about nested tags like you
+do with em.
+
+9. How do you include a google font?
+
+A: The first step in including a google font is searching the web https://fonts.google.com/ from here
+we look for a certain font that we would like to use. Upon found, 'click' the font as a example
+'Open Sans' from here can include the styles all you do is 'click on the +' from adding google will
+prompt a screen on the right we want to 'click the radio button' stating <link> copy the information.
+Then go into our HTML <head> tag and declare that link element. After that the font will be able to
+accessible in our CSS style-sheet using property font-family: 'Open Sans', sans-serif; 
+As well it is practical to have a hierarchy of other compatible fonts as a back-up to be user friendly
+in case of browser issues.
+*/
+
+/* Part 2 - Application */
+body {
+  background-color: #d0cfcf;
+  font-size: 16px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+h2 {
+  text-transform: capitalize;
+}
+
+section {
+  font-size: 1.5em;
+}
+
+h1 {
+  /* 1st value Horizontal, 2nd Vertical, 3rd Blur, 4th Color*/
+  text-shadow: 5px 5px 2px red;
+}

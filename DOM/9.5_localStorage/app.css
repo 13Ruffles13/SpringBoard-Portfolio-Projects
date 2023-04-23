@@ -1,0 +1,132 @@
+/*
+    COLOR PALETTE: 
+        50514F, CBD4C2, FFFCFF, 247BA0, C3B299
+
+        Link: https://coolors.co/50514f-cbd4c2-fffcff-247ba0-c3b299
+*/
+* {
+  /* border: 1px solid red; */
+}
+:root {
+  font-size: 10px;
+  font-family: fantasy, "Times New Roman", Times, serif;
+  --davysGray: #50514f;
+  --ashGray: #cbd4c2;
+  --snow: #fffcff;
+  --cerulean: #247ba0;
+  --khaki: #c3b299;
+  --primaryBlack: #010101;
+}
+
+html {
+  background: url(/exerciseProjects/unit9_DOM/9.5_localStorage/localImages/body_TODOBackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+.header h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--snow);
+  text-transform: capitalize;
+}
+
+/*
+    =====MAIN SECTION ======
+*/
+
+.main {
+  text-align: center;
+}
+
+input[name="newTODO"] {
+  color: var(--davysGray);
+}
+
+input[name="submit"] {
+  background-color: var(--davysGray);
+  color: var(--snow);
+}
+
+#todos {
+  display: grid;
+  font-family: fantasy;
+  color: var(--davysGray);
+  accent-color: var(--davysGray);
+}
+#todos button {
+  font-family: fantasy;
+}
+
+#todos input {
+  display: inline-flex;
+  padding-left: 1rem;
+}
+
+.todoAgenda ol,
+li {
+  text-align: left;
+  color: var(--primaryBlack);
+  width: 70%;
+  word-wrap: break-word;
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  color: var(--primaryBlack);
+  font-size: 1.5rem;
+}
+
+/*
+    ====== MEDIA QUERY'S =====
+*/
+@media screen and (max-width: 500px) {
+  html {
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+  }
+  .header h1 {
+    font-size: 4.5rem;
+    display: block;
+    position: relative;
+    bottom: 2.5rem;
+  }
+  .footer h3 {
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0%;
+  }
+  input[name="newTODO"] {
+    width: 50%;
+  }
+  input[name="submit"] {
+    border-radius: 10%;
+  }
+  .todoAgenda {
+    font-size: 2rem;
+  }
+  #todos li button {
+    position: absolute;
+    right: 27%;
+    height: 2rem;
+    width: 17%;
+    margin-right: -0.5rem;
+    margin-top: 0.3rem;
+  }
+  #todos li input {
+    position: absolute;
+    right: 8%;
+    width: 5%;
+    height: 2rem;
+  }
+  footer h3 {
+    position: relative;
+    left: 60%;
+  }
+}

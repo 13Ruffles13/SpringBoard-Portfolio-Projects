@@ -1,0 +1,46 @@
+/*Conceptual
+1. What is the box model?
+A: The box model consists of four properties that define it. The first is the content of the element
+for example the text and images. After that next is padding which the inside of the border. Then 
+border which is what goes around padding and content. Finally, the last property is called margin
+and that is the area outside the border. As well that property is transparent.
+
+2. What is the difference between margin and padding?
+A: Margin is outside of the border called "space between". While Padding is the inside the border
+"space inside".
+
+3. What is collapsing margin?
+A: It occurs when vertical adjacent margins of the block-level elements collide to share a default
+margin space. This size of that shared space is determined by the larger number margin. Example of
+this can be viewed as which has more strength "margin" meaning that larger margin wins.
+
+4. What is the purpose of the box-sizing CSS property?
+A: It allows us developers to include the padding and border in an element's total width and height.
+Pros of using is better user interaction.
+
+5. What does the outline property do?
+A: Is the line drawn outside the element's border. This is ued to make a element "stand out". From
+this we are able to style as well the outline property i.e outline-style: dotted;
+
+6. How do you add a background image in CSS?
+A: To add a image as the background we use the property called "background-image" which specifies an
+image to use as the background of an element. i.e background-image: url("someImg.png");
+
+7. Given a div with a width of 200px, margin of 20px and padding of 20px, what is the calculated 
+width by the browser?
+A: First take the first variable which is the width 200px then padding of 20px and finally last margin
+of 20px. We can suppose measurements px be replaced with x. Meaning 200x + 20x + 20x from this equation
+we get 240x. Replace x with px getting 240px for the calculated width of the browser.
+Equation -> width = border + padding + width of the content.
+
+8. Given a div with a height of 100px, border of 10px and padding of 20px, what is the calculated height 
+by the browser?
+A: We have a div with properties height, border, and padding. Task is to find the height. Height can be
+found by height = border(top, bottom) + padding(top, bottom) + height of the content. Add variables 
+100 + 10 + 10 + 20 + 20 = 160px total height.
+
+9. What does margin:auto do?
+A: Can be viewed as auto values being constructed to the browser to take and render. Meaning according
+to the value provided in its own styles.css. Sets the element horizontally center in its container.
+Taking specified width, and remaining space will be split equally between the left and right margins.
+*/

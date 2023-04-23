@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9.5 JS Todos</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <header class="header"><h1>TODO's</h1></header>
+    <main class="main">
+      <form action="SUBMIT TODOS">
+        <div>
+          <input
+            type="text"
+            name="newTODO"
+            id="newTodo"
+            value=""
+            placeholder="Add a new todo"
+            required
+          />
+          <input type="submit" id="addTODO" name="submit" value="SUBMIT" />
+        </div>
+      </form>
+      <section class="todoAgenda">
+        <ol id="todos"></ol>
+      </section>
+    </main>
+    <footer>
+      <h3>&copy Rafael Alvarado</h3>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
